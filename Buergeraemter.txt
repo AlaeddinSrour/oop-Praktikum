@@ -1,13 +1,13 @@
 Daten des buergeramts
- Name des buergeramts	sadasd
-öffnungszeit des buergeramts:	 21.0 32.0
-Straße und Hausnummer des buergeramts:	qweqwe 22
-Dienstleistungen des buergeramts:	[Ljava.lang.String;@4c5f8d0bDaten des buergeramts
- Name des buergeramts	sasdasdc
-öffnungszeit des buergeramts:	 12.0 23.0
-Straße und Hausnummer des buergeramts:	asdasd
-Dienstleistungen des buergeramts:	[Ljava.lang.String;@14aebbecDaten des buergeramts
- Name des buergeramts	sasdasdc
-öffnungszeit des buergeramts:	 13.0 23.0
-Straße und Hausnummer des buergeramts:	asdasd
-Dienstleistungen des buergeramts:	[Ljava.lang.String;@24e5559a
+ Name des buergeramts	1
+öffnungszeit des buergeramts:	 2.0 3.0
+Straße und Hausnummer des buergeramts:	4
+Dienstleistungen des buergeramts:	[5]Daten des buergeramts
+ Name des buergeramts	12
+öffnungszeit des buergeramts:	 232.0 24324.0
+Straße und Hausnummer des buergeramts:	32423
+Dienstleistungen des buergeramts:	[23423]Daten des buergeramts
+ Name des buergeramts	123423
+öffnungszeit des buergeramts:	 2.3243534E7 2.4324436E10
+Straße und Hausnummer des buergeramts:	32423435345
+Dienstleistungen des buergeramts:	[23423435345]

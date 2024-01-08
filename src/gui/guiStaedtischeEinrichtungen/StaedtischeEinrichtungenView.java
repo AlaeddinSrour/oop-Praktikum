@@ -1,6 +1,7 @@
 package gui.guiStaedtischeEinrichtungen;
 
 import business.BuergeraemterModel;
+import business.Buergeramt;
 import gui.guiBuergeraemter.BuergeraemterControl;
 import javafx.event.*;
 import javafx.scene.Scene;
@@ -62,26 +63,29 @@ public class StaedtischeEinrichtungenView {
             	pane.getChildren().add(btnAnzeigeBuergeraeamter); 
        }
        
-       private void initListener() {
-    	   btnAnzeigeBuergeraeamter.setOnAction(new EventHandler<ActionEvent>() {
-	    		@Override
-	        	public void handle(ActionEvent e) {
-	            	zeigeBuergeraemterAn();
-	        	} 
-   	    });
-    }
+            private void initListener() {
+         	   btnAnzeigeBuergeraeamter.setOnAction(new EventHandler<ActionEvent>() {
+     	    		@Override
+     	        	public void handle(ActionEvent e) {
+     	            	zeigeBuergeraemterAn();
+     	        	} 
+        	    });
+         }
+
    
-    public void zeigeBuergeraemterAn(){
-    		if(buergeraemterModel.getBuergeramt() != null){
-    			txtAnzeigeBuergeraeamter.setText(
-    				buergeraemterModel.getBuergeramt()
- 				.gibBuergeramtZurueck(' '));
-    		}
-    		else{
-    			zeigeInformationsfensterAn(
- 				"Bisher wurde kein Bürgeramt aufgenommen!");
-    		}
-    }	
+	    public void zeigeBuergeraemterAn() {
+	        if (buergeraemterModel.getBuergeraemterList().size()>0) {
+	        		
+	     	   StringBuffer text = new StringBuffer(); 
+	        		
+	        		for (Buergeramt buergeramt : buergeraemterModel.getBuergeraemterList()) {
+	                text.append(buergeramt.gibBuergeramtZurueck(' ')).append("\n");
+	            }
+	            this.txtAnzeigeBuergeraeamter.setText(text.toString());
+	        } else {
+	            zeigeInformationsfensterAn("Bisher wurde kein Buergeramt aufgenommen!");
+	        }
+	    }
    
     private void zeigeInformationsfensterAn(String meldung){
     	  	new MeldungsfensterAnzeiger(AlertType.INFORMATION,"Information", meldung).zeigeMeldungsfensterAn();
