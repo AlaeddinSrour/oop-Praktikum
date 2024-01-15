@@ -2,7 +2,7 @@ package gui.guiBuergeraemter;
 
 import java.io.IOException;
 
-import business.BuergeraemterModel;
+import business.Buergeraemter.BuergeraemterModel;
 import javafx.stage.Stage;
 import ownUtil.Observer;
 

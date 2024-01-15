@@ -4,7 +4,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import business.Buergeramt;
+import business.Buergeraemter.Buergeramt;
 
 public class ConcreteTxtProduct  extends Product {
 	BufferedWriter austxt;

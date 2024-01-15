@@ -2,7 +2,7 @@ package fabrikMethode;
 
 import java.io.IOException;
 
-import business.Buergeramt;
+import business.Buergeraemter.Buergeramt;
 
 public abstract class Product {
 	public abstract void fuegeInDateiHinzu(Buergeramt buergeramt) throws IOException;

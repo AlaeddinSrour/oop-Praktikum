@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import business.Buergeramt;
+import business.Buergeraemter.Buergeramt;
 
 public class BuergeramtTest {
 	 private Buergeramt buergeramt;
